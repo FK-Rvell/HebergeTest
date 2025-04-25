@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="vendor/jquery-3.7.1.js"></script>
+    <script src="vendor/dataTables.js"></script>
+    <script src="vendor/dataTables.bootstrap5.js"></script>
+    <script src="vendor/jquery-ui.js"></script>
+    <link rel="stylesheet" href="vendor/fontawesome.all.min.css">
+    <script src="vendor/fontawesome.all.min.js"></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
+    </script>
+    <style>
+        body {
+            background-color: #ccc9c9;
+        }
+
+        #ico {
+            color: #fff;
+            font-size: 25px;
+        }
+
+        img {
+            border-radius: 50px;
+        }
+
+        .d1 {
+
+            padding-right: 20px;
+        }
+
+        .para {
+            background-color: #47494b;
+            padding: 7px;
+        }
+
+        .card {
+
+            border: none;
+            background: none;
+
+        }
+
+        .card-body {
+            margin-top: 2px;
+            height: 110px;
+            background-color: #fceded;
+        }
+
+        .card-body #i {
+            font-size: 80px;
+            color: rgb(95, 150, 221);
+        }
+
+        .card-footer {
+            border: none;
+
+            background-color: #fcfaf2;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+
+        }
+
+        span {
+            background-color: #8d8a8a;
+
+            width: 27px;
+            height: 23px;
+            text-align: center;
+            border-radius: 50px;
+            color: #fff;
+        }
+
+        .nav {
+            padding: 5px;
+            background-color: #9061fd;
+        }
+
+        .ad {
+            background-color: #7e43eb;
+        }
+
+        .size {
+            background-color: #303133;
+
+            color: #dad9d9;
+        }
+
+        #span {
+            text-align: center;
+            background-color: #47494b;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0px 20px;
+            margin-bottom: 4px;
+        }
+
+        #icons {
+            padding-left: 40px;
+        }
+
+        .tog {
+            margin-top: 43px;
+        }
+
+        .bod {
+            background-color: #d5edf0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class=" container-fluid">
+
+
+        <div class="row toggler  nav ">
+            <div class="col-sm-2 effect ad" class="ui-widget-content ui-corner-all">
+
+                <div class="d-flex">
+                    <i id="ico" class="fa fa-clock"></i>
+                    <p>ADMIN</p>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <p class="button" class=""><i id="ico" class="fa fa-list"></i></p>
+            </div>
+            <div class="col-sm-5 text-end">
+                <i id="ico" class="fas fa-bell"></i>
+            </div>
+        </div>
+
+        <!-- <div class=" ">
+                    <div class=" "> -->
+
+        <div class="row toggler ">
+            <div class="size col-sm-2 effect" class="ui-widget-content ui-corner-all">
+        
+                <div class="d1">
+                    <div class="text-center">
+                        <img height="80" width="80" src="1.jpg" alt="">
+                    </div>
+                    <div id="accordion" class="tog">
+        
+                        <p class="para">
+                            <a href="page1.html"><i class="fa fa-clock"></i> Acceuil <i id="icons"
+                                    class="fa fa-chevron-right "></i></a>
+                        </p>
+        
+                        <div></div>
+                        <p class="para"> <i class="fa fa-user"></i> Personnel <i id="icons" class="fa fa-chevron-right "></i>
+                        </p>
+                        <div>
+                            <li><i class="fa fa-plus"></i><a href="#">ajouter du personnel</a></li>
+                            <li><i class="fa fa-plus"></i><a href="#">definir les access</a></li>
+                            <li><i class="fa fa-plus"></i><a href="datatb.html">liste du personnel</a></li>
+        
+        
+                        </div>
+                        <p class="para"> <i class="fa fa-briefcase"></i> Prestataire <i id="icons"
+                                class="fa fa-chevron-right "></i></p>
+                        <div>
+                            <li><i class="fa fa-plus"></i><a href="new.html">ajouter prestataire</a></li>
+                            <li><i class="fa fa-plus"></i><a href="#">liste prestataire</a></li>
+                            <li><i class="fa fa-plus"></i><a href="#">envoyer des mails</a></li>
+                            <li><i class="fa fa-user"></i><a href="#">lister contacts</a></li>
+                            <li><i class="fa fa-share"></i><a href="#">envoyer des sms</a></li>
+                        </div>
+                        <p class="para"> <i class="fa fa-hourglass"></i> Travaux <i id="icons" class="fa fa-chevron-right "></i>
+                        </p>
+                        <div>
+                            <li><i class="fa fa-plus"></i><a href="text-editor.html">ordonner taches</a></li>
+                            <li><i class="fa fa-plus"></i><a href="#">listing</a></li>
+        
+                        </div>
+                        <p class="para"> <i class="fa fa-university"></i> operation <i id="icons"
+                                class="fa fa-chevron-right "></i></p>
+                        <div>
+                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus </p>
+                        </div>
+                        <p class="para"> <i class="fa fa-thumbtack"></i> prestations <i id="icons"
+                                class="fa fa-chevron-right "></i></p>
+                        <div>
+        
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </div>
+                        <p class="para"> <i class="fa fa-exchange"></i> Comptabilite <i id="icons"
+                                class="fa fa-chevron-right "></i></p>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et ma. </p>
+        
+                        </div>
+                        <p class="para"> <i class="fa fa-hourglass"></i> Documents <i id="icons"
+                                class="fa fa-chevron-right text -en"></i></p>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada a
+                            </p>
+                        </div>
+                        <!-- </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div class="row bg-white ">
+                    <div class="col-sm-12">
+                       <div class="text-end">
+                        <i class="fa fa-user"></i>
+                        <i class="fa fa-user"></i>
+                       </div>
+                       <hr>
+                       <div class="row">
+                         <div class="col-sm-12 text-center">
+                            <h2>NOUVEAU ETUDIANT</h2>
+                         </div>
+                       </div>
+                    </div>
+                </div>
+    
+            </div>
+
+
+
+    </div>
+
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+
+    <select style="display: none;" name="effects" id="effectTypes">
+        <!-- <option value="blind">Blind</option>
+    -->
+        <option value="slide">Slide</option>
+    </select>
+    <script>
+        $(function () {
+            // run the currently selected effect
+            function runEffect() {
+                // get effect type from
+                var selectedEffect = $("#effectTypes").val();
+
+                // Most effect types need no options passed by default
+                var options = {};
+                // some effects have required parameters
+                if (selectedEffect === "scale") {
+                    options = { percent: 50 };
+                } else if (selectedEffect === "size") {
+                    options = { to: { width: 200, height: 60 } };
+                }
+
+                // Run the effect
+                $(".effect").toggle(selectedEffect, options, 800);
+            };
+
+            // Set effect from select menu value
+            $(".button").on("click", function () {
+                runEffect();
+            });
+        });
+    </script>
+</body>
+
+</html>

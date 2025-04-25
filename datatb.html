@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="vendor/jquery-3.7.1.js"></script>
+    <script src="vendor/dataTables.js"></script>
+    <script src="vendor/dataTables.bootstrap5.js"></script>
+    <script src="vendor/jquery-ui.js"></script>
+    <link rel="stylesheet" href="vendor/fontawesome.all.min.css">
+    <script src="vendor/fontawesome.all.min.js"></script>
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
+    </script>
+    <style>
+        /* body {
+            background-color: #ccc9c9;
+        }
+
+        #ico {
+            color: #fff;
+            font-size: 25px;
+        }
+
+        img {
+            border-radius: 50px;
+        }
+
+        .d1 {
+
+            padding-right: 20px;
+        }
+
+        .para {
+            background-color: #47494b;
+            padding: 7px;
+        }
+
+        .card {
+
+            border: none;
+            background: none;
+            text-transform: capitalize;
+        }
+
+        .card-body {
+            margin-top: 2px;
+            height: 110px;
+            background-color: #fceded;
+        }
+
+        .card-body #i {
+            font-size: 80px;
+            color: rgb(95, 150, 221);
+        }
+
+        .card-footer {
+            border: none;
+
+            background-color: #fcfaf2;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+
+        }
+
+        span {
+            
+
+            width: 27px;
+            height: 23px;
+            text-align: center;
+            border-radius: 50px;
+            
+        }
+
+        .nav {
+            
+            background-color: #9061fd;
+        }
+
+        .ad {
+            background-color: #7e43eb;
+        }
+
+        .size {
+            background-color: #303133;
+
+            color: #dad9d9;
+        }
+
+        #span {
+            text-align: center;
+            background-color: #19426b;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0px 20px;
+            margin-bottom: 4px;
+        }
+
+        #icons {
+            padding-left: 40px;
+        }
+
+        .tog {
+            margin-top: 43px;
+        }
+
+        .bod {
+            background-color: #d5edf0;
+        }
+        
+        th,tr,td{
+            border: 1px solid rgb(169, 185, 180);
+        }
+        .content{
+            margin-top: 1%;
+            
+        }
+        .cont{
+            padding: 1%;
+                } */
+        
+    </style>
+    
+</head>
+
+<body>
+
+
+    <div class=" container-fluid">
+
+
+        <div class="row toggler  nav ">
+            <div class="col-sm-2 effect ad" class="ui-widget-content ui-corner-all">
+
+                <div class="d-flex">
+                    <i id="ico" class="fa fa-clock"></i>
+                    <p>ADMIN</p>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <p class="button" class=""><i id="ico" class="fa fa-list"></i></p>
+            </div>
+            <div class="col-sm-5 text-end">
+                <i id="ico" class="fas fa-bell"></i>
+            </div>
+        </div>
+
+
+        <div class="row toggler ">
+            <div class="size col-sm-2 effect" class="ui-widget-content ui-corner-all">
+        
+                <div class="d1">
+                    <div class="text-center">
+                        <img height="80" width="80" src="1.jpg" alt="">
+                    </div>
+                    <div id="accordion" class="tog">
+        
+                        <p class="para">
+                            <a href="page1.html"><i class="fa fa-clock"></i> Acceuil <i id="icons"
+                                    class="fa fa-chevron-right "></i></a>
+                        </p>
+        
+                        <div>
+                            <li><i class="fa fa-menu"></i><a href="page1.html">Acceuil</a></li>
+                        </div>
+                        <p class="para"> <i class="fa fa-user"></i> Personnel <i id="icons" class="fa fa-chevron-right "></i>
+                        </p>
+                        <div>
+                            <li><i class="fa fa-plus"></i><a href="#">ajouter du personnel</a></li>
+                            <li><i class="fa fa-plus"></i><a href="#">definir les access</a></li>
+                            <li><i class="fa fa-plus"></i><a href="datatb.html">liste du personnel</a></li>
+        
+        
+                        </div>
+                        <p class="para"> <i class="fa fa-briefcase"></i> Prestataire <i id="icons"
+                                class="fa fa-chevron-right "></i></p>
+                        <div>
+                            <li><i class="fa fa-plus"></i><a href="new.html">ajouter prestataire</a></li>
+                            <li><i class="fa fa-plus"></i><a href="#">liste prestataire</a></li>
+                            <li><i class="fa fa-plus"></i><a href="#">envoyer des mails</a></li>
+                            <li><i class="fa fa-user"></i><a href="#">lister contacts</a></li>
+                            <li><i class="fa fa-share"></i><a href="#">envoyer des sms</a></li>
+                        </div>
+                        <p class="para"> <i class="fa fa-hourglass"></i> Travaux <i id="icons" class="fa fa-chevron-right "></i>
+                        </p>
+                        <div>
+                            <li><i class="fa fa-plus"></i><a href="text-editor.html">ordonner taches</a></li>
+                            <li><i class="fa fa-plus"></i><a href="#">listing</a></li>
+        
+                        </div>
+                        <p class="para"> <i class="fa fa-university"></i> operation <i id="icons"
+                                class="fa fa-chevron-right "></i></p>
+                        <div>
+                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus </p>
+                        </div>
+                        <p class="para"> <i class="fa fa-thumbtack"></i> prestations <i id="icons"
+                                class="fa fa-chevron-right "></i></p>
+                        <div>
+        
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </div>
+                        <p class="para"> <i class="fa fa-exchange"></i> Comptabilite <i id="icons"
+                                class="fa fa-chevron-right "></i></p>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et ma. </p>
+        
+                        </div>
+                        <p class="para"> <i class="fa fa-hourglass"></i> Documents <i id="icons"
+                                class="fa fa-chevron-right text -en"></i></p>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada a
+                            </p>
+                        </div>
+                        <!-- </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div  class="col-sm-10 content">
+
+               
+                
+                    <div class="bg-white cc">
+                    
+                        <div class="d-flex justify-content-end ">
+                            <p id="button"><i class="fa fa-chevron-down"></i></p>
+                            <p style="margin:0px 12px;" ><i class=" fa fa-close"></i></p>
+                        </div>
+                       
+                        
+                            <div class="  text-center" >
+                                <h4 class="text-primary text-center">LISTE DU PERSONNEL</h4>
+                            </div>
+                            <hr>
+                           
+                       
+                        <div class="toggler  cont">
+                             <div id="effect" >
+                                
+                                <table id="example" class="table table-striped border " width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th class=""># <i class="fa fa-chevron-down"></i><i fa fa-exchange></i></th>
+                                            <th>Name</th>
+                                            <th>Login</th>
+                                            <th>contact</th>
+                                            <th>fonctions</th>
+                                            <th>actions</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td class="text-center">
+                                                <i  class="fa fa-sync text-success"></i>
+                                                
+                                                <i  class="fa fa-trash-alt text-danger"></i>
+                                                
+                                                <i  class="fas fa-edit text-primary"></i>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>63</td>
+                                        <td class="text-center">
+                                            <i class="fa fa-sync text-success"></i>
+                                        
+                                            <i class="fa fa-trash-alt text-danger"></i>
+                                        
+                                            <i class="fas fa-edit text-primary"></i>
+                                        </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Ashton Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td class="text-center">
+                                                <i class="fa fa-sync text-success"></i>
+                                            
+                                                <i class="fa fa-trash-alt text-danger"></i>
+                                            
+                                                <i class="fas fa-edit text-primary"></i>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Cedric Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td class="text-center">
+                                                <i class="fa fa-sync text-success"></i>
+                                            
+                                                <i class="fa fa-trash-alt text-danger"></i>
+                                            
+                                                <i class="fas fa-edit text-primary"></i>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Airi Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td class="text-center">
+                                                <i class="fa fa-sync text-success"></i>
+                                            
+                                                <i class="fa fa-trash-alt text-danger"></i>
+                                            
+                                                <i class="fas fa-edit text-primary"></i>
+                                            </td>
+                                            
+                                        </tr>
+                                        <!-- <tr>
+                                            <td>Brielle Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012-12-02</td>
+                                            <td>$372,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Herrod Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>San Francisco</td>
+                                            <td>59</td>
+                                            <td>2012-08-06</td>
+                                            <td>$137,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rhona Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Tokyo</td>
+                                            <td>55</td>
+                                            <td>2010-10-14</td>
+                                            <td>$327,900</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Colleen Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>2009-09-15</td>
+                                            <td>$205,500</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td>Serge Baldwin</td>
+                                            <td>Data Coordinator</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2012-04-09</td>
+                                            <td>$138,575</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zenaida Frank</td>
+                                            <td>Software Engineer</td>
+                                            <td>New York</td>
+                                            <td>63</td>
+                                            <td>2010-01-04</td>
+                                            <td>$125,250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zorita Serrano</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>56</td>
+                                            <td>2012-06-01</td>
+                                            <td>$115,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer Acosta</td>
+                                            <td>Junior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>43</td>
+                                            <td>2013-02-01</td>
+                                            <td>$75,650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cara Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>46</td>
+                                            <td>2011-12-06</td>
+                                            <td>$145,600</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hermione Butler</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2011-03-21</td>
+                                            <td>$356,250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lael Greer</td>
+                                            <td>Systems Administrator</td>
+                                            <td>London</td>
+                                            <td>21</td>
+                                            <td>2009-02-27</td>
+                                            <td>$103,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonas Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>30</td>
+                                            <td>2010-07-14</td>
+                                            <td>$86,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shad Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>51</td>
+                                            <td>2008-11-13</td>
+                                            <td>$183,000</td>
+                                        </tr> -->
+                                        <!-- <tr>
+                                            <td>6</td>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>2011-06-27</td>
+                                            <td>$183,000</td>
+                                        </tr> -->
+                                       
+                                    </tbody>
+                                    
+                                </table>
+                                
+                                
+                                
+                                </div>
+                             </div>
+                            
+                        
+                    </div>
+                </div>
+        </div>
+    </div>
+
+            <!-- </div>
+
+
+
+        </div>
+
+    </div>
+    </div> -->
+
+
+   
+    <select style="display: none;" name="effects" id="effectTypes">
+        <!-- <option value="blind">Blind</option>
+    -->
+        <option value="slide">Slide</option>
+    </select>
+    <script>
+        new DataTable('#example');
+    </script>
+    <script>
+        $(function () {
+            // run the currently selected effect
+            function runEffect() {
+                // get effect type from
+                var selectedEffect = $("#effectTypes").val();
+
+                // Most effect types need no options passed by default
+                var options = {};
+                // some effects have required parameters
+                if (selectedEffect === "scale") {
+                    options = { percent: 50 };
+                } else if (selectedEffect === "size") {
+                    options = { to: { width: 200, height: 60 } };
+                }
+
+                // Run the effect
+                $(".effect").toggle(selectedEffect, options, 800);
+            };
+
+            // Set effect from select menu value
+            $(".button").on("click", function () {
+                runEffect();
+            });
+        });
+    </script>
+  
+    </div>
+     <select style="display: none;" name="effets" id="effectType">
+        <option value="blind">Blind</option>
+        <option value="bounce">Bounce</option>
+        <option value="clip">Clip</option>
+        <option value="drop">Drop</option>
+        <option value="explode">Explode</option>
+        <option value="fade">Fade</option>
+        <option value="fold">Fold</option>
+        <option value="highlight">Highlight</option>
+        <option value="puff">Puff</option>
+        <option value="pulsate">Pulsate</option>
+        <option value="scale">Scale</option>
+        <option value="shake">Shake</option>
+        <option value="size">Size</option>
+        <option value="slide">Slide</option>
+    </select>
+
+    
+  <script>
+    $(function () {
+        // run the currently selected effect
+        function runEffect() {
+            // get effect type from
+            var selectedEffect = $("#effectType").val();
+
+            // Most effect types need no options passed by default
+            var options = {};
+            // some effects have required parameters
+            if (selectedEffect === "scale") {
+                options = { percent: 50 };
+            } else if (selectedEffect === "size") {
+                options = { to: { width: 200, height: 60 } };
+            }
+
+            // Run the effect
+            $("#effect").toggle(selectedEffect, options, 500);
+        };
+
+        // Set effect from select menu value
+        $("#button").on("click", function () {
+            runEffect();
+        });
+    });
+</script>
+
+</body>
+
+</html>

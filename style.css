@@ -1,0 +1,179 @@
+  body {
+      background-color: #ccc9c9;
+  }
+
+  #ico {
+      color: #fff;
+      font-size: 25px;
+  }
+
+  img {
+      border-radius: 50px;
+  }
+
+  .d1 {
+      list-style: none;
+      padding-right: 5%;
+
+  }
+
+  .para {
+      background-color: #47494b;
+      padding: 5%;
+  }
+
+  .card {
+      
+      border: none;
+      background: none;
+
+  }
+
+  .card-body {
+      margin-top: 2px;
+      height: 110px;
+      background-color: #fceded;
+  }
+
+  .card-body #i {
+      font-size: 80px;
+      color: rgb(95, 150, 221);
+  }
+
+  .card-footer {
+      border: none;
+
+      background-color: #fcfaf2;
+  }
+
+  .cards {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+
+  }
+
+  .spa {
+      background-color: #8d8a8a;
+
+      width: 27px;
+      height: 23px;
+      text-align: center;
+      border-radius: 50px;
+      color: #fff;
+  }
+
+  .nav {
+      padding: 5px;
+      background-color: #9061fdc9;
+  }
+
+  .ad {
+      background-color: #7e43eb;
+  }
+
+  .size {
+      background-color: #303133;
+
+      color: #dad9d9;
+  }
+
+  #span {
+      text-align: center;
+      background-color: #47494b;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0px 20px;
+      margin-bottom: 4px;
+  }
+
+  #icons {
+      padding-left: 24%;
+  }
+
+  .tog {
+      margin-top: 43px;
+  }
+
+  .bod {
+      background-color: #d5edf0;
+  }
+
+  .d1 a {
+      text-decoration: none;
+      text-align: center;
+      color: #e4d9d9ec;
+      text-transform: capitalize;
+      padding-left: 6%;
+  }
+   .titre {
+       padding-top: 3%;
+   }
+
+   form {
+       display: flex;
+       justify-content: space-evenly;
+   }
+
+   input ,select{
+       width: 65%;
+   }
+
+   .form1 label {
+       width: 28%;
+       text-align: end;
+       margin: 2%;
+       font-weight: bold;
+       font-size: 15px;
+       text-transform: capitalize;
+   }
+
+   input::placeholder {
+       text-transform: capitalize;
+       padding-left: 3%;
+   }
+
+   .form {
+       padding: 3% 0%;
+       /* padding-bottom: 4%; */
+       border: none;
+       color: #fff;
+   }
+
+   button {
+       border: none;
+       padding: 0.5% 2%;
+       border-radius: 7px;
+       color: #fff;
+       text-transform: capitalize;
+   }
+
+   .content {
+       margin-top: 1%;
+
+   }
+    th,tr,td {
+        border: 1px solid rgb(169, 185, 180);
+    }
+th{
+    color: black;
+    text-transform: capitalize;
+}
+    .content {
+        margin-top: 1%;
+        
+
+    }
+
+    .cont {
+        padding: 1%;
+    }
+    .cc{
+        box-shadow: 0px 1px 20px 0px rgb(80, 77, 77);
+    }
+    select {
+        height: 36%;
+    }
+    textarea{
+
+    }
